@@ -1,0 +1,25 @@
+<h1>글 상세 내용</h1>
+<hr>
+<table>
+   
+    <tbody>
+        <tr>
+            <td>제목</td>
+            <td>내용</td>
+            <td>아이피</td>
+        </tr>
+       <tr>
+            <td><%=@board.title%></td>
+            <td><%=@board.contents%></td>
+            <td><%=@board.user_ip%></td>
+        </tr>
+       
+    </tbody>
+</table>
+<table>
+    <tr>
+        <td><a href="/">목록</a></td>
+        <td><a href="/board/edit/<%=@board.id%>">수정</a></td>
+        <td><a href="/board/destroy/<%=@board.id%>">삭제</a></td>
+    </tr>
+</table>

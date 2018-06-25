@@ -1,0 +1,6 @@
+<form action="/board/create" method="post">
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+    <input type="text" name="title" placeholder="제목을 입력해주세요"/>
+    <textarea rows="4" cols="50" name="contents" placeholder="내용을 입력해주세요"></textarea>
+    <input type="submit" value="글쓰기">
+</form>

@@ -1,0 +1,15 @@
+<h1>게시판 목록</h1>
+<hr>
+<table>
+    <thead>제목</thead>
+    <thead>아이피</thead>
+    <tbody>
+        <% @boards.each do |board| %>
+        <tr>
+            <td><a href="/board/show/<%=board.id%>"><%=board.title%></a></td>
+            <td><%=board.user_ip%></td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
+<%= link_to "글 쓰기", board_new_path  %>
